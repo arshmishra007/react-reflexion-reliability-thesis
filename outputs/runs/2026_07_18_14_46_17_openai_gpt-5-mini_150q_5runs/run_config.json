@@ -1,0 +1,20 @@
+{
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "raw_data": "data/raw/hotpot_dev.json",
+  "sample_size": 150,
+  "runs_per_agent": 5,
+  "seed": 42,
+  "context_mode": "supporting_plus_distractors",
+  "agents": [
+    "react",
+    "reflexion"
+  ],
+  "temperature": 0.2,
+  "max_output_tokens": 1500,
+  "openai_reasoning_effort": "low",
+  "output_dir": "F:\\LJMUCODE\\react_reflexion_arch_comparison_code\\outputs\\runs\\2026_07_18_14_46_17_openai_gpt-5-mini_150q_5runs",
+  "experiment_logs": "F:\\LJMUCODE\\react_reflexion_arch_comparison_code\\outputs\\runs\\2026_07_18_14_46_17_openai_gpt-5-mini_150q_5runs\\experiment_logs.csv",
+  "processed_subset": "F:\\LJMUCODE\\react_reflexion_arch_comparison_code\\outputs\\runs\\2026_07_18_14_46_17_openai_gpt-5-mini_150q_5runs\\hotpot_subset_150.json",
+  "created_at_utc": "2026-07-18T09:16:19.440714+00:00"
+}

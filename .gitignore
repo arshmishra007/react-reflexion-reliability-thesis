@@ -1,7 +1,35 @@
+# Local environment and secrets
 .env
+.env.*
 .venv/
 venv/
+
+# Python caches and test artefacts
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS noise
 .idea/
 .vscode/
+.DS_Store
+Thumbs.db
+
+# Source dataset and pilot subsets
+data/raw/
+data/processed/hotpot_subset_1.json
+data/processed/hotpot_subset_3.json
+data/processed/hotpot_subset_10.json
+
+# Root-level/generated intermediate outputs
+outputs/*.csv
+
+# Keep only the final dissertation run and reconstructed statistics.
+outputs/runs/*
+!outputs/runs/2026_07_18_14_46_17_openai_gpt-5-mini_150q_5runs/
+!outputs/runs/2026_07_18_14_46_17_openai_gpt-5-mini_150q_5runs/**
+!outputs/reconstructed_statistics/
+!outputs/reconstructed_statistics/statistical_validation_summary.md

@@ -83,6 +83,9 @@ class SupportingContextSelectionTests(unittest.TestCase):
 class KnownQuestionContextTests(unittest.TestCase):
     def test_known_smoke_questions_include_all_supporting_titles(self):
         raw_path = Path(__file__).parents[1] / "data" / "raw" / "hotpot_dev.json"
+        if not raw_path.exists():
+            self.skipTest("HotpotQA raw dev file is not included in the public repository.")
+
         wanted_ids = {
             "5ae143ed55429920d5234360",
             "5abc19705542993a06baf86e",
